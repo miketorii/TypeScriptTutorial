@@ -1,7 +1,7 @@
 class Person {
-      ssn: string;
-      firstName: string;
-      lastName: string;
+      private ssn: string;
+      private firstName: string;
+      private lastName: string;
 
       constructor(ssn: string, firstName: string, lastName: string){
       		       this.ssn = ssn;
