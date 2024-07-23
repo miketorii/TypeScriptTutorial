@@ -1,12 +1,10 @@
-console.log('---iterator---');
-
 class Component {
     constructor(public name: string) {
 
     }
 }
 
-class Frame implements Iterator<Component>{
+class Frame implements IterableIterator<Component>{
     private pointer = 0;
 
     constructor(public name: string, public components: Component[] ){
@@ -22,9 +20,13 @@ class Frame implements Iterator<Component>{
         } else {
             return { 
                 done: true,
-                value: 0
+                value: null
             }
         }
+    }
+
+    [Symbol.iterator](): IterableIterator<Component>{
+        return this;
     }
 }
 
