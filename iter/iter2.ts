@@ -42,3 +42,8 @@ console.log(ret4.value);
 let ret5 = frame.next();
 console.log(ret5.value);
 
+let frame2 = new Frame("Door2", [new Component("top2"), new Component("bottom2"), new Component("right2"), new Component("left2")]);
+console.log("-----------");
+for (let cmp of frame2){
+    console.log(cmp);
+}
