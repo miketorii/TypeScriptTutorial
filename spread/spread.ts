@@ -38,3 +38,16 @@ for(var item in someArray){
 for(var item2 of someArray){
     console.log(item2);
 }
+
+enum CardSuit {
+    Clubs,
+    Diamonds,
+    Hearts,
+    Spades
+}
+
+//var card = CardSuit.Clubs;
+var card = CardSuit.Diamonds;
+console.log("----------")
+console.log(card);
+
