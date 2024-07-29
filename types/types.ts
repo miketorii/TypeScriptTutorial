@@ -1,5 +1,6 @@
 //////////////////////////////////////////////////
 //  enum
+// https://github.com/basarat/typescript-book
 
 enum CardSuit {
     Clubs,
