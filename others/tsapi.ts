@@ -31,3 +31,18 @@ ff.add("mike");
 ff.add("tom");
 ff.add("john");
 console.log(ff);
+
+const array = [...ff];
+console.log(array);
+console.log(JSON.stringify(array));
+
+console.log("----------------------");
+for (const i of ff){
+    console.log(i);
+}
+console.log("----------------------");
+
+ff.delete("tom");
+console.log(ff);
+
+console.log(ff.has("mike"));
