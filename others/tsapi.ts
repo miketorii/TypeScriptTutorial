@@ -21,3 +21,13 @@ map.delete("tom");
 console.log(map);
 console.log(map.has("tom"));
 
+/////////////////////////////////////////
+//
+const f = new Set(["apple","orange","grape"]);
+console.log(f);
+
+const ff = new Set<string>();
+ff.add("mike");
+ff.add("tom");
+ff.add("john");
+console.log(ff);
