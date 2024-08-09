@@ -46,3 +46,7 @@ ff.delete("tom");
 console.log(ff);
 
 console.log(ff.has("mike"));
+
+/////////////////////////////////////////
+//
+
