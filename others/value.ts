@@ -12,3 +12,13 @@ val = "mike";
 console.log("val string: ", val);
 val = { name: "object" };
 console.log("val object: ", val);
+
+//////////////////////////////////////////
+//
+const user : { name: string; age: number } = {
+    name: "Mike",
+    age: 20
+}
+
+console.log(user.name);
+console.log(user.age);
