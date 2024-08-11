@@ -37,3 +37,18 @@ console.log(product.name);
 console.log(product.price);
 console.log(product.expireddate);
 console.log(product.getTaxIncludedPrice());
+
+//////////////////////////////////////////
+//
+const myarray = [1,2,3,4,5];
+const [a,b,c] = myarray;
+console.log(a);
+console.log(b);
+console.log(c);
+const [,,,d,e] = myarray;
+console.log(d);
+console.log(e);
+const [A, ...rest] = myarray;
+console.log(A);
+console.log(rest);
+
