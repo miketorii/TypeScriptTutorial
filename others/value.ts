@@ -78,3 +78,4 @@ user1.hello = () => { console.log("hello mike"); } ;
 user1.age = 100;
 user1.hello();
 console.log(user1);
+
