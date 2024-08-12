@@ -17,4 +17,13 @@ const sayHello = (name: string) : string => 'Hello '+name;
 const ret = sayHello("mike");
 console.log(ret);
 
+function getbirdinfo(name: string) : string[] {
+    return name.split(",");
+}
+
+function singbirds(birdinfo: (x: string) => string[] ) : string {
+    return birdinfo("hato, kiji, kamo")[2] + " piyo piyo";
+}
+
+console.log(singbirds(getbirdinfo));
 
