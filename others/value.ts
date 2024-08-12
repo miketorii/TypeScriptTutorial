@@ -52,3 +52,13 @@ const [A, ...rest] = myarray;
 console.log(A);
 console.log(rest);
 
+//////////////////////////////////////////
+//
+const arr = ["a","b","c","d","e"];
+for (let i =0; i < arr.length; i++){
+    console.log(i, arr[i]);
+}
+for (const val of arr){
+    console.log(val);
+}
+arr.forEach( (value, i) => { console.log(value, i); } );
