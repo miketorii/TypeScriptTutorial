@@ -52,6 +52,13 @@ const [A, ...rest] = myarray;
 console.log(A);
 console.log(rest);
 
+const mixarr : [string, number] = ["mike",999];
+console.log(mixarr);
+const mixarr2 : (string|number)[] = [ "tom", 123, "john"];
+for (let i=0; i < mixarr2.length; i++){
+    console.log(mixarr2[i]);
+}
+
 //////////////////////////////////////////
 //
 const arr = ["a","b","c","d","e"];
