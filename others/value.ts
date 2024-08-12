@@ -69,3 +69,12 @@ for (const val of arr){
     console.log(val);
 }
 arr.forEach( (value, i) => { console.log(value, i); } );
+
+//////////////////////////////////////////
+//
+let user1 : any = { name: "mike"};
+console.log(user1.name);
+user1.hello = () => { console.log("hello mike"); } ;
+user1.age = 100;
+user1.hello();
+console.log(user1);
