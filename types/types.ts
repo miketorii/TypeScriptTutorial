@@ -66,3 +66,20 @@ let p = new Implement.MyPoint(5,10);
 console.log("getX=",p.getX());
 console.log("getY=", p.getY());
 
+///////////////////////////////////////
+// 
+console.log( JSON.stringify({ foo: 123 }) );
+console.log( JSON.stringify({ foo2: undefined }) );
+console.log( JSON.stringify({ foo3: null }) );
+
+///////////////////////////////////////
+// 
+const s1 = Symbol("foo");
+const s2 = Symbol("foo");
+console.log(s1 === s1);
+
+///////////////////////////////////////
+// 
+//const x: bigint = 100n;
+//console.log(x);
+
