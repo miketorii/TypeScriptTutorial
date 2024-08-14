@@ -83,3 +83,48 @@ console.log(s1 === s1);
 //const x: bigint = 100n;
 //console.log(x);
 
+///////////////////////////////////////
+// 
+function getdeviceinfo() : [string, number, boolean] {
+    return ['C5500', 40001, true];
+}
+
+const devinfo : [string, number, boolean] = getdeviceinfo();
+console.log(devinfo[0]);
+console.log(devinfo[1]);
+console.log(devinfo[0].length);
+
+function delay(mils: number, count: number): Promise<number>{
+    return new Promise<number>(
+        resolve => { setTimeout(
+            () => { resolve(count); }
+            ,mils ); }
+    );
+}
+
+async function take3Seconds(): Promise<string> {
+    let count: number = await delay(3000, 3);
+    return "take3seconds done";
+}
+
+async function take5Seconds(): Promise<number> {
+    let count: number = await delay(3000, 5);
+    return count;
+}
+
+async function runtuple() {
+
+    const tupledata: [string, number] = await Promise.all(
+        [ take3Seconds(), take5Seconds() ]
+    );
+
+    console.log(tupledata);
+
+    const str: string = await take3Seconds();
+    console.log(str);
+    const num: number = await take5Seconds();
+    console.log(num);
+}
+
+runtuple();
+
