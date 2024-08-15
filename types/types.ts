@@ -134,9 +134,21 @@ const sample: object = {
     year: 1999,
     month: 7
 };
-
 console.log(sample);
-
 const copiedsample : object = {...sample};
-
 console.log(copiedsample);
+
+const map1 = new Map([
+    [".js", "JS"],
+    [".ts", "TS"]
+]);
+const map2 = new Map(map1);
+console.log(map1);
+console.log(map2);
+console.log(map1===map2);
+
+const set1 = new Set([1,2,3]);
+const set2 = new Set(set1);
+console.log(set1);
+console.log(set2);
+console.log(set1===set2);
