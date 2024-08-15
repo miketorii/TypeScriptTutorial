@@ -152,3 +152,9 @@ const set2 = new Set(set1);
 console.log(set1);
 console.log(set2);
 console.log(set1===set2);
+
+const arr1 = [5,6,7];
+const arr2 = [...arr1];
+console.log(arr1);
+console.log(arr2);
+console.log(arr1===arr2);
