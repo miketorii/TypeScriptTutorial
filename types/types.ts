@@ -128,3 +128,15 @@ async function runtuple() {
 
 runtuple();
 
+///////////////////////////////////////////
+//
+const sample: object = {
+    year: 1999,
+    month: 7
+};
+
+console.log(sample);
+
+const copiedsample : object = {...sample};
+
+console.log(copiedsample);
