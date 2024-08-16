@@ -123,7 +123,9 @@ async function runtuple() {
     const str: string = await take3Seconds();
     console.log(str);
     const num: number = await take5Seconds();
+    console.log("take5Seconds done");
     console.log(num);
+    console.log("------------------");
 }
 
 runtuple();
@@ -158,3 +160,21 @@ const arr2 = [...arr1];
 console.log(arr1);
 console.log(arr2);
 console.log(arr1===arr2);
+
+///////////////////////////////////////////
+//
+const obj1: object = {
+    firstName: "Mike",
+    middleName: "John",
+    lastName: "Piazza",
+};
+
+const obj2: object = {
+    firstName: "Paul",
+    lastName: "Smith",
+};
+
+console.log(obj1);
+console.log(obj2);
+const obj3: object = { ...obj1, ...obj2 };
+console.log(obj3);
