@@ -1,9 +1,9 @@
 interface FooId extends String {
-    _fooIdBrand: string;
+  _fooIdBrand: string;
 }
 
 interface BarId extends String {
-    _barIdBrand: string;
+  _barIdBrand: string;
 }
 
 var fooId: FooId;
@@ -14,7 +14,7 @@ var barId: BarId;
 //fooId = <FooId>barId; // error
 //barId = <BarId>fooId; // error
 
-fooId = "foo" as any;
+fooId = 'foo' as any;
 console.log(fooId);
 
 var str: string;
