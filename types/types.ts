@@ -178,3 +178,25 @@ console.log(obj1);
 console.log(obj2);
 const obj3: object = { ...obj1, ...obj2 };
 console.log(obj3);
+
+///////////////////////////////////////////
+//
+const profile = {
+    name: 'Mike',
+    twitter: 'twitname',
+    github: 'miketorii',
+    country: 'US',
+    city: 'Irvine',
+    state: 'CA',
+    zipcode: '92612',
+    phone: '9498881234'
+};
+
+const sns = ( ({twitter, github}) => ({twitter, github}) )(profile);
+console.log(sns);
+
+const addr = ( ({name, twitter, github, ...rest}) => rest )(profile);
+console.log(addr);
+
+
+
