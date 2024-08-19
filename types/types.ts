@@ -195,3 +195,16 @@ console.log(sns);
 
 const addr = (({ name, twitter, github, ...rest }) => rest)(profile);
 console.log(addr);
+
+///////////////////////////////////////////
+//
+type Point = {
+  x: number,
+  y: number
+};
+
+function printPoint(point: Point){
+  console.log('x='+point.x+' y='+point.y);  
+}
+
+printPoint({x: 10, y: 20});
