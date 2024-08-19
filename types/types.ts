@@ -208,3 +208,17 @@ function printPoint(point: Point){
 }
 
 printPoint({x: 10, y: 20});
+
+type returnstr = (str: string) => string;
+
+function printName(str: string) : string {
+  return 'Hello '+str; 
+}
+
+function calledfunction(name: string, callfunc: returnstr){
+  let printstr = name + callfunc('world');
+  console.log(printstr);
+}
+
+calledfunction('Mike', printName);
+
