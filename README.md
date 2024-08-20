@@ -1,1 +1,3 @@
 # TypeScriptTutorial
+
+wrote from vm
