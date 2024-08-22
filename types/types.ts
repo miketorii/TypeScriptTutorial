@@ -222,3 +222,19 @@ function calledfunction(name: string, callfunc: returnstr){
 
 calledfunction('Mike', printName);
 
+///////////////////////////////////////////
+//
+class Octopus {
+  readonly name: string;
+  readonly legs = 8;
+
+  constructor() {
+    this.name = 'mike mike';
+  }
+}
+
+const octobj = new Octopus();
+console.log(octobj.name);
+console.log(octobj.legs);
+//octobj.legs = 9;
+
