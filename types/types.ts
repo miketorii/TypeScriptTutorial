@@ -238,3 +238,18 @@ console.log(octobj.name);
 console.log(octobj.legs);
 //octobj.legs = 9;
 
+///////////////////////////////////////////
+//
+const currencies = ["CNY", "EUR", "GBP", "JPY", "USD"] as const;
+type Currency = (typeof currencies)[number];
+let cur : Currency;
+cur = "CNY";
+//cur = "MMM";
+console.log(cur);
+
+type ErrorCode = 400 | 401 | 402 | 403 | 404 | 405;
+let err : ErrorCode;
+err = 400;
+//err = 500;
+console.log("err = "+err);
+
