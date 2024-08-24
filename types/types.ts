@@ -263,3 +263,6 @@ let retx = callEither<number>(100, 999);
 console.log(retx);
 let rets = callEither<string>("ok","error");
 console.log(rets);
+
+//////////////////////////////////////////////////
+//
