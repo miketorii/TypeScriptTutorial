@@ -10,3 +10,4 @@ for (const [idx, w] of words.entries()){
     console.log(idx, w);
 }
 
+
