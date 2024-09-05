@@ -5,7 +5,9 @@ console.log(device.model);
 console.log(device.type);
 console.log(device.status);
 
+device.model = "iR-ADV C3200";
 device.status = 30001;
+console.log(device.model);
 console.log(device.status);
 
 const jsonNewData = JSON.stringify(device);
