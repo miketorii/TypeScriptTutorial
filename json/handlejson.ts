@@ -13,4 +13,5 @@ console.log(device.status);
 
 const jsonNewData = JSON.stringify(device);
 console.log(jsonNewData);
+console.log(jsonNewData);
 
