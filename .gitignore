@@ -1,5 +1,7 @@
 **/*.js
 .DS_Store
+package.json
+package-lock.json
 
 # dependencies
 /node_modules
@@ -20,6 +22,7 @@
 # misc
 .DS_Store
 *.pem
+*~
 
 # debug
 npm-debug.log*
