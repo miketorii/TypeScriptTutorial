@@ -1,5 +1,5 @@
 # TypeScriptTutorial
 
 wrote from vm
-wrote from vm 2
+wrote from vm 3
 
